@@ -1,0 +1,10 @@
+.container{
+   
+    padding-left:4% ;
+    padding-right:8% ;
+}
+
+.navbar{
+    display:flex ;
+    justify-content: space-between;
+}
