@@ -35,3 +35,5 @@ window.onscroll= () => {
     navbar.classList.remove('aktif');
 };
 
+
+  

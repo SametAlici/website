@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     
@@ -148,23 +149,26 @@
 </section>
 
 <section class="iletişim" id="iletişim">
-
-<h2 class="heading">İletişim</h2>
-<form action="#">
-    <div class="iletişim-kutu">
-        <input type="text" placeholder="Ad soyad">
-        <input type="email" placeholder="Email Adresi">
-    </div>
-    <div class="iletişim-kutu">
-        <input type="number" placeholder="Telefon numarası">
-        <input type="text" placeholder="Email ">
-    </div>
-    <textarea name="" id="" cols="30" rows="10" placeholder="mesajınız"></textarea>
-    <input type="submit" value="Mesajı Gönder" class="btn">
-</form>
+    <h2 class="heading">İletişim</h2>
+        <form method="POST" action="iletişim-post.php">
+            
+        <div class="iletişim-kutu">
+           
+            <input type="text" name="AdSoyad" placeholder="Ad Soyad" required>
+            <input type="email" name="Email" placeholder="Email Adresi" required>
+        </div>
+        <div class="iletişim-kutu">
+            <input type="number" name="Telno" placeholder="Telefon Numarası" required>
+            <input type="text" name="Konu" placeholder="Konu">
+        </div>
+        <textarea cols="30" rows="10" name="Mesaj" placeholder="Mesajınız"></textarea>
+        <button class="btn" type="submit">Gönder</button>
+    </form>
+    
 </section>
 
     
     <script src = "app.js"></script>
+   
 </body>
 </html>
